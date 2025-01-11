@@ -1,0 +1,65 @@
+{
+	"scopeName": "source.newjack",
+	"patterns": [
+		{
+			"name": "keyword.control.newjack",
+			"match": "\\b(class|global|describe|function|method|constructor|void|pass|var|let|do|if|elif|else|while|return|for|break|continue)\\b"
+		},
+		{
+			"name": "keyword.type.newjack",
+			"match": "\\b(int|bool|char|str|list|float)\\b"
+		},
+		{
+			"name": "constant.language.newjack",
+			"match": "\\b(false|true|self)\\b"
+		},
+		{
+			"name": "variable.other.newjack",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+		},
+		{
+			"name": "string.quoted.double.newjack",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.newjack",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "string.quoted.single.newjack",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.newjack",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "comment.line.number-sign.newjack",
+			"begin": "#",
+			"end": "$"
+		},
+		{
+			"name": "comment.line.backtick.newjack",
+			"begin": "`",
+			"end": "`"
+		},
+		{
+			"name": "constant.numeric.newjack",
+			"match": "\\b-?(0|[1-9][0-9]*)(\\.[0-9]+)?\\b"
+		},
+		{
+			"name": "keyword.operator.newjack",
+			"match": "\\b(!|~|\\*|/|\\+|-|<<|>>|==|!=|>=|<=|>|<|&|\\|)\\b"
+		},
+		{
+			"name": "punctuation.definition.newjack",
+			"match": "[{}\\[\\]()=;,.]"
+		}
+	]
+}

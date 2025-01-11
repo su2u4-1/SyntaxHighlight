@@ -1,0 +1,44 @@
+{
+  "name": "newjack",
+  "displayName": "NewJack Syntax Highlight",
+  "description": "A VS Code extension for NewJack syntax highlighting.",
+  "version": "0.0.1",
+  "publisher": "su2u4",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "language": "newjack",
+        "scopeName": "source.newjack",
+        "path": "./syntaxes/newjack.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "newjack",
+        "aliases": [
+          "NewJack",
+          "newjack"
+        ],
+        "extensions": [
+          ".nj"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/su2u4-1/NewJackSyntaxHighlight/tree/main/newjack"
+  }
+}
+git init
+git commit -m "start"
+git branch -M main
+git remote add origin https: //github.com/su2u4-1/NewJackSyntaxHighlight.git
+git push -u origin main
