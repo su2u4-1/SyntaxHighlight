@@ -3,11 +3,15 @@
 	"patterns": [
 		{
 			"name": "keyword.control.newjack",
-			"match": "\\b(class|global|describe|function|method|constructor|void|pass|var|let|do|if|elif|else|while|return|for|break|continue)\\b"
+			"match": "\\b(void|pass|var|let|do|if|elif|else|while|return|for|break|continue)\\b"
 		},
 		{
-			"name": "keyword.type.newjack",
-			"match": "\\b(int|bool|char|str|list|float)\\b"
+			"name": "type.newjack",
+			"match": "\\b(class|global|describe|function|method|constructor)\\b"
+		},
+		{
+			"name": "storage.type.newjack",
+			"match": "\\b(int|bool|char|str|list|arr|float)\\b"
 		},
 		{
 			"name": "constant.language.newjack",
@@ -42,7 +46,7 @@
 		{
 			"name": "comment.line.number-sign.newjack",
 			"begin": "#",
-			"end": "$"
+			"end": "\n"
 		},
 		{
 			"name": "comment.line.backtick.newjack",
@@ -60,6 +64,22 @@
 		{
 			"name": "punctuation.definition.newjack",
 			"match": "[{}\\[\\]()=;,.]"
+		},
+		{
+			"name": "meta.class.newjack",
+			"begin": "\\b(class)\\s+",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.control.newjack"
+				}
+			},
+			"end": "(?={|\\n)",
+			"patterns": [
+				{
+					"name": "entity.name.type.class.newjack",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+				}
+			]
 		}
 	]
 }

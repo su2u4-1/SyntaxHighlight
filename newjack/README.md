@@ -1,5 +1,20 @@
 # NewJack Syntax Highlight
 
+This VS Code extension provides syntax highlighting for the NewJack language.
+
+## Features
+
+- Syntax highlighting
+
+## Install
+
+1. Download and install VS Code.
+2. Install this extension in VS Code.
+
+## use
+
+Open a `.nj` file and you will see syntax highlighting.
+
 這個 VS Code 擴展為 NewJack 語言提供語法高亮顯示。
 
 ## 特性
