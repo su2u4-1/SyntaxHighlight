@@ -7,3 +7,8 @@
 ## 0.0.2
 
 - 試圖理解copilot寫的並自己寫寫看
+
+## 0.0.3
+
+- 繼續更改顏色  
+- 修復class, global, describe, function, method, constructor無顏色的bug

@@ -3,19 +3,23 @@
 	"patterns": [
 		{
 			"name": "keyword.control.newjack",
-			"match": "\\b(void|pass|var|let|do|if|elif|else|while|return|for|break|continue)\\b"
-		},
-		{
-			"name": "type.newjack",
-			"match": "\\b(class|global|describe|function|method|constructor)\\b"
+			"match": "\\b(var|let|do|if|elif|else|while|return|for|break|continue)\\b"
 		},
 		{
 			"name": "storage.type.newjack",
+			"match": "\\b(class|global|describe|function|method|constructor|void|pass)\\b"
+		},
+		{
+			"name": "support.type.newjack",
 			"match": "\\b(int|bool|char|str|list|arr|float)\\b"
 		},
 		{
 			"name": "constant.language.newjack",
-			"match": "\\b(false|true|self)\\b"
+			"match": "\\b(false|true)\\b"
+		},
+		{
+			"name": "variable.language.newjack",
+			"match": "\\b(self)\\b"
 		},
 		{
 			"name": "variable.other.newjack",
