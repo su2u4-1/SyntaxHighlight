@@ -23,7 +23,7 @@
 		},
 		{
 			"name": "variable.other.newjack",
-			"match": "\\b[a-zA-Z_][\\w]*\\b"
+			"match": "\\b[a-zA-Z_]\\w*\\b"
 		},
 		{
 			"name": "string.quoted.double.newjack",
@@ -71,7 +71,7 @@
 		},
 		{
 			"name": "meta.class.newjack",
-			"match": "(?<=class )[a-zA-Z_][\\w]*"
+			"match": "(?<=class )[a-zA-Z_]\\w*"
 		}
 	]
 }
