@@ -1,0 +1,39 @@
+{
+  "name": "newjackvm",
+  "displayName": "NewJackVM Syntax Highlight",
+  "description": "A VS Code extension for NewJack's VM syntax highlighting.",
+  "version": "0.0.2",
+  "publisher": "su2u4",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "language": "newjackvm",
+        "scopeName": "source.newjackvm",
+        "path": "./syntaxes/newjackvm.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "newjackvm",
+        "aliases": [
+          "NewJackVM",
+          "newjackvm"
+        ],
+        "extensions": [
+          ".vm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/su2u4-1/SyntaxHighlight/tree/main/newjackvm"
+  }
+}

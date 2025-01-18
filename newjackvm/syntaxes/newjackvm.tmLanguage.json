@@ -1,0 +1,51 @@
+{
+	"scopeName": "source.newjackvm",
+	"patterns": [
+		{
+			"name": "keyword.control.newjackvm",
+			"match": "\\b(push|pop|alloc|goto|call|return)\\b"
+		},
+		{
+			"name": "storage.type.newjackvm",
+			"match": "\\b(setv|j\\-if|load|stor|setl|getl|addv|subv|mulv|divv|rmvv|lmvv|andv|or_v)\\b"
+		},
+		{
+			"name": "support.type.newjackvm",
+			"match": "\\b(jump|comp|copy|inpv|addr|subr|mulr|divr|rmvr|lmvr|andr|or_r|exte|sett|(?<!\\-)label)\\b"
+		},
+		{
+			"name": "variable.other.newjackvm",
+			"match": "\\$(A|C|D|L|M|P|T|V)\\b"
+		},
+		{
+			"name": "variable.other.newjackvm",
+			"match": "@(A|C|D|L|M|P|T|V)\\b"
+		},
+		{
+			"name": "support.function.newjackvm",
+			"match": "(?<=(call| label) )[a-zA-Z_][\\w]*\\.[\\w]+"
+		},
+		{
+			"name": "string.quoted.newjackvm",
+			"match": "(?<=(goto| label) )[a-zA-Z_][\\w]*"
+		},
+		{
+			"name": "support.type.newjackvm",
+			"match": "(?<=debug-label (start|end) )[a-zA-Z_][\\w]*\\.[\\w]+"
+		},
+		{
+			"name": "comment.line.number-sign.newjackvm",
+			"begin": "#",
+			"end": "\n"
+		},
+		{
+			"name": "comment.line.backtick.newjackvm",
+			"begin": "`",
+			"end": "`"
+		},
+		{
+			"name": "constant.numeric.newjackvm",
+			"match": "\\b-?(0|[1-9][0-9]*)(\\.[0-9]+)?\\b"
+		}
+	]
+}

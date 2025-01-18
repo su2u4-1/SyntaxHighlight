@@ -12,3 +12,8 @@
 
 - 繼續更改顏色  
 - 修復class, global, describe, function, method, constructor無顏色的bug
+
+## 0.0.4
+
+- 更改部分regex code
+- 更改repository URL

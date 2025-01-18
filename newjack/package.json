@@ -2,7 +2,7 @@
   "name": "newjack",
   "displayName": "NewJack Syntax Highlight",
   "description": "A VS Code extension for NewJack syntax highlighting.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "su2u4",
   "engines": {
     "vscode": "^1.60.0"
@@ -34,6 +34,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/su2u4-1/NewJackSyntaxHighlight/tree/main/newjack"
+    "url": "https://github.com/su2u4-1/SyntaxHighlight/tree/main/newjack"
   }
 }

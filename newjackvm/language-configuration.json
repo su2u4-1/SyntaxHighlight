@@ -1,0 +1,57 @@
+{
+  "comments": {
+    "lineComment": "#",
+    "blockComment": [
+      "`",
+      "`"
+    ]
+  },
+  "brackets": [
+    [
+      "debug-label start",
+      "debug-label end"
+    ],
+    [
+      "{",
+      "}"
+    ],
+    [
+      "[",
+      "]"
+    ],
+    [
+      "(",
+      ")"
+    ]
+  ],
+  "autoClosingPairs": [
+    {
+      "open": "debug-label start",
+      "close": "debug-label end"
+    },
+    {
+      "open": "{",
+      "close": "}"
+    },
+    {
+      "open": "[",
+      "close": "]"
+    },
+    {
+      "open": "(",
+      "close": ")"
+    },
+    {
+      "open": "\"",
+      "close": "\""
+    },
+    {
+      "open": "'",
+      "close": "'"
+    },
+    {
+      "open": "`",
+      "close": "`"
+    }
+  ]
+}
