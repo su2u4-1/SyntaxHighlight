@@ -11,7 +11,7 @@
 		},
 		{
 			"name": "support.type.newjackvm",
-			"match": "\\b(jump|comp|copy|inpv|addr|subr|mulr|divr|rmvr|lmvr|andr|or_r|exte|sett|(?<!\\-)label)\\b"
+			"match": "\\b(jump|comp|copy|inpv|addr|subr|mulr|divr|rmvr|lmvr|andr|or_r|exte|sett|(?<!-)label)\\b"
 		},
 		{
 			"name": "variable.other.newjackvm",
@@ -23,15 +23,23 @@
 		},
 		{
 			"name": "support.function.newjackvm",
-			"match": "(?<=(call| label) )[a-zA-Z_][\\w]*\\.[\\w]+"
+			"match": "(?<=[^-]?label )[a-zA-Z_]\\w*\\.\\w+"
+		},
+		{
+			"name": "support.function.newjackvm",
+			"match": "(?<=call )[a-zA-Z_]\\w*\\.\\w+"
 		},
 		{
 			"name": "string.quoted.newjackvm",
-			"match": "(?<=(goto| label) )[a-zA-Z_][\\w]*"
+			"match": "(?<=[^-]label )[a-zA-Z_]\\w*"
+		},
+		{
+			"name": "string.quoted.newjackvm",
+			"match": "(?<=goto )[a-zA-Z_]\\w*"
 		},
 		{
 			"name": "support.type.newjackvm",
-			"match": "(?<=debug-label (start|end) )[a-zA-Z_][\\w]*\\.[\\w]+"
+			"match": "(?<=debug-label (start|end) )[a-zA-Z_]\\w*\\.\\w+"
 		},
 		{
 			"name": "comment.line.number-sign.newjackvm",
