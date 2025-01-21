@@ -7,7 +7,7 @@
 		},
 		{
 			"name": "storage.type.newjack",
-			"match": "\\b(class|global|describe|function|method|constructor|void|pass)\\b"
+			"match": "\\b(class|global|enter|describe|function|method|constructor|void|pass)\\b"
 		},
 		{
 			"name": "support.type.newjack",

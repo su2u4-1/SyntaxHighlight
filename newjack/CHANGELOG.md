@@ -17,3 +17,7 @@
 
 - 更改部分regex code
 - 更改repository URL
+
+## 0.0.5
+
+- 新增enter關鍵字
