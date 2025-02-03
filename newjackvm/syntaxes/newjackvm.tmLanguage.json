@@ -30,12 +30,28 @@
 			"match": "(?<=call )[a-zA-Z_]\\w*\\.\\w+"
 		},
 		{
+			"name": "support.function.newjackvm",
+			"match": "(?<=setl )[a-zA-Z_]\\w*\\.\\w+"
+		},
+		{
+			"name": "support.function.newjackvm",
+			"match": "(?<=getl )[a-zA-Z_]\\w*\\.\\w+"
+		},
+		{
 			"name": "string.quoted.newjackvm",
 			"match": "(?<=[^-]label )[a-zA-Z_]\\w*"
 		},
 		{
 			"name": "string.quoted.newjackvm",
 			"match": "(?<=goto )[a-zA-Z_]\\w*"
+		},
+		{
+			"name": "string.quoted.newjackvm",
+			"match": "(?<=setl )[a-zA-Z_]\\w*"
+		},
+		{
+			"name": "string.quoted.newjackvm",
+			"match": "(?<=getl )[a-zA-Z_]\\w*"
 		},
 		{
 			"name": "support.type.newjackvm",
