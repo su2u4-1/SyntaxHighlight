@@ -7,11 +7,11 @@
 		},
 		{
 			"name": "storage.type.newjackvm",
-			"match": "\\b(setv|j\\-if|load|stor|setl|getl|addv|subv|mulv|divv|rmvv|lmvv|andv|or_v)\\b"
+			"match": "\\b(setv|load|stor|setl|getl|addv|subv|mulv|divv|rmvv|lmvv|andv|orv)\\b"
 		},
 		{
 			"name": "support.type.newjackvm",
-			"match": "\\b(jump|comp|copy|inpv|addr|subr|mulr|divr|rmvr|lmvr|andr|or_r|exte|sett|(?<!-)label)\\b"
+			"match": "\\b(jump|comp|copy|inpv|addr|subr|mulr|divr|rmvr|lmvr|andr|orr|exte|sett|(?<!-)label)\\b"
 		},
 		{
 			"name": "variable.other.newjackvm",

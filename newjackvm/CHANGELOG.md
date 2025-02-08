@@ -14,4 +14,8 @@
 
 ## 0.0.4
 
-- 增加setl與getl後的label name顏色顯示
+- 增加`setl`與`getl`後的`label name`顏色顯示
+
+## 0.0.5
+
+- 刪除`j-if`，把`or_r`與`or_v`改成`orr`與`orv`
