@@ -2,7 +2,7 @@
   "name": "newjack",
   "displayName": "NewJack Syntax Highlight",
   "description": "A VS Code extension for NewJack syntax highlighting.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "su2u4",
   "engines": {
     "vscode": "^1.60.0"

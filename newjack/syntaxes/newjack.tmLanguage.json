@@ -3,11 +3,11 @@
 	"patterns": [
 		{
 			"name": "keyword.control.newjack",
-			"match": "\\b(var|let|do|if|elif|else|while|return|for|break|continue)\\b"
+			"match": "\\b(var|global|attr|let|do|if|elif|else|while|return|for|break|continue)\\b"
 		},
 		{
 			"name": "storage.type.newjack",
-			"match": "\\b(class|global|enter|describe|function|method|constructor|void|pass)\\b"
+			"match": "\\b(class|function|method|constructor|void|pass)\\b"
 		},
 		{
 			"name": "support.type.newjack",

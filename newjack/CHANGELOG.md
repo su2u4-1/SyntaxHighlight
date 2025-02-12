@@ -21,3 +21,8 @@
 ## 0.0.5
 
 - 新增enter關鍵字
+
+## 0.0.6
+
+- 刪除global、enter、describe關鍵字
+- 新增global、attr關鍵字
