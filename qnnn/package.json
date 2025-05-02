@@ -1,0 +1,39 @@
+{
+  "name": "qnnn",
+  "displayName": "Qnnn Syntax Highlight",
+  "description": "A VS Code extension for Qnnn syntax highlighting.",
+  "version": "0.0.1",
+  "publisher": "su2u4",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "language": "qnnn",
+        "scopeName": "source.qnnn",
+        "path": "./syntaxes/qnnn.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "qnnn",
+        "aliases": [
+          "Qnnn",
+          "qnnn"
+        ],
+        "extensions": [
+          ".qn"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/su2u4-1/SyntaxHighlight/tree/main/qnnn"
+  }
+}

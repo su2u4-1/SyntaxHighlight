@@ -1,0 +1,107 @@
+{
+	"scopeName": "source.qnnn",
+	"patterns": [
+		{
+			"name": "keyword.control.qnnn",
+			"match": "\\b(var|const|attr|static|if|elif|else|while|return|for|in|break|continue|import|as)\\b"
+		},
+		{
+			"name": "storage.type.qnnn",
+			"match": "\\b(class|func|method|op|void|pass|NULL|public)\\b"
+		},
+		{
+			"name": "support.type.qnnn",
+			"match": "\\b(int|bool|char|str|list|arr|float|pointer|range|type|tuple|dict)\\b"
+		},
+		{
+			"name": "constant.language.qnnn",
+			"match": "\\b(false|true|NULL)\\b"
+		},
+		{
+			"name": "variable.language.qnnn",
+			"match": "\\b(self)\\b"
+		},
+		{
+			"name": "string.quoted.double.qnnn",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.qnnn",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "string.quoted.single.qnnn",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.qnnn",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "comment.line.number-sign.qnnn",
+			"begin": "#|//",
+			"end": "\n"
+		},
+		{
+			"name": "comment.block.qnnn",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		{
+			"name": "constant.numeric.integer.qnnn",
+			"match": "\\b-?(0|[1-9][0-9]*)\\b"
+		},
+		{
+			"name": "constant.numeric.float.qnnn",
+			"match": "\\b-?(0|[1-9][0-9]*)(\\.[0-9]+)\\b"
+		},
+		{
+			"name": "keyword.operator.qnnn",
+			"match": "(\\+|-|\\*|/|%|==|!=|>=|<=|>|<|&&|\\|\\||&|\\||=|\\+=|-=|\\*=|/=|%=|\\*\\*|@|\\^|<<|>>|!)"
+		},
+		{
+			"name": "punctuation.definition.qnnn",
+			"match": "[{}\\[\\]()=;,.<>:]"
+		},
+		{
+			"name": "support.type.qnnn",
+			"match": "(?<=class )[a-zA-Z_]\\w*"
+		},
+		{
+			"name": "support.type.qnnn",
+			"match": "(?<=\\w+<)[a-zA-Z_]\\w*"
+		},
+		{
+			"name": "support.function.qnnn",
+			"match": "(?<=(func|method)(\\sop\\s|\\spublic\\s|\\sconst\\s|\\s)[\\w<> ,]*\\s*)([A-Za-z_]\\w*)\\s*\\("
+		},
+		{
+			"name": "meta.generic.qnnn",
+			"begin": "<(?![=<])",
+			"end": ">",
+			"patterns": [
+				{
+					"include": "$self"
+				}
+			]
+		},
+		{
+			"name": "meta.import.qnnn",
+			"match": "(?<=import )(\"[\\w\\/\\.\\\\]+\" as )?\\w+"
+		},
+		{
+			"name": "keyword.operator.special.qnnn",
+			"match": "(\\^|@)\\b"
+		},
+		{
+			"name": "variable.other.qnnn",
+			"match": "\\b[a-zA-Z_]\\w*\\b"
+		}
+	]
+}
