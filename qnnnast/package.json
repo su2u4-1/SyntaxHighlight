@@ -1,0 +1,39 @@
+{
+  "name": "qnnnast",
+  "displayName": "QnnnAST Syntax Highlight",
+  "description": "A VS Code extension for NewJack's VM syntax highlighting.",
+  "version": "0.0.1",
+  "publisher": "su2u4",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "language": "qnnnast",
+        "scopeName": "source.qnnnast",
+        "path": "./syntaxes/qnnnast.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "qnnnast",
+        "aliases": [
+          "QnnnAST",
+          "qnnnast"
+        ],
+        "extensions": [
+          ".ast"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/su2u4-1/SyntaxHighlight/tree/main/qnnnast"
+  }
+}
