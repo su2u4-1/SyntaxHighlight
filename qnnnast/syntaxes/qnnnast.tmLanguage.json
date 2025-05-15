@@ -3,7 +3,7 @@
 	"patterns": [
 		{
 			"name": "support.function.qnnnast",
-			"match": "\\s*(program|import|declare_var|declare_attr|type|expression|operator|term|variable|name|value|call|use_typevar|typevar|declare_typevar|args_call|statements|func|args_declare|declare_arg|class|method|arr|tuple|dict|if|for|while|break|return)\\s?\\("
+			"match": "\\s*(program|import|declare_var|declare_attr|type|expression|operator|term|variable|name|value|call|use_generic|generic|declare_generic|args_call|statements|func|args_declare|declare_arg|class|method|arr|tuple|dict|if|for|while|break|return)\\s?\\("
 		},
 		{
 			"name": "variable.other.qnnnast",
