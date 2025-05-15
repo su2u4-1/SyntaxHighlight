@@ -7,3 +7,7 @@
 ## 0.0.2
 
 - 將`typevar`重命名為`generic`
+
+## 0.0.3
+
+- 新增`continue`
